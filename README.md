@@ -80,18 +80,18 @@ Consumer c1 = new Consumer(p, b, 1, 5, false);
 
 ```javascript
 Producer #2 put: 1. Wait time to put: 0. 
-Producer #1 put: 1. Wait time to put: 0. 
 Consumer #1 got: 1 from Producer #2. Wait time to get: 0
 Consumer #1 got: 1 from Producer #1. Wait time to get: 0
-Producer #2 produce again in 83 miliseconds
-Producer #1 produce again in 57 miliseconds
-Producer #1 put: 2. Wait time to put: 0. 
-Producer #1 produce again in 80 miliseconds
-Consumer #1 got: 2 from Producer #1. Wait time to get: 57
+Producer #1 put: 1. Wait time to put: 1. 
+INFO> Producer #2 produce again in 35 miliseconds
+INFO> Producer #1 produce again in 38 miliseconds
 Producer #2 put: 2. Wait time to put: 0. 
-Producer #2 produce again in 19 miliseconds
-Consumer #1 got: 2 from Producer #2. Wait time to get: 26
+Consumer #1 got: 2 from Producer #2. Wait time to get: 37
+INFO> Producer #2 produce again in 20 miliseconds
+Producer #1 put: 2. Wait time to put: 0. 
+INFO> Producer #1 produce again in 63 miliseconds
+Consumer #1 got: 2 from Producer #1. Wait time to get: 3
 Producer #2 put: 3. Wait time to put: 0. 
-Consumer #1 got: 3 from Producer #2. Wait time to get: 20
-Producer #2 produce again in 19 miliseconds
+Consumer #1 got: 3 from Producer #2. Wait time to get: 17
+INFO> Producer #2 produce again in 52 miliseconds
 ```

@@ -35,7 +35,7 @@ public class Producer extends Thread {
 			if(waitForNextProduction){
 				try {
 					long timeToProduceAgain = (int)(Math.random() * 100);
-					this.printer.print("Producer #" + this.number + " produce again in " + timeToProduceAgain + " miliseconds");
+					this.printer.print("INFO> Producer #" + this.number + " produce again in " + timeToProduceAgain + " miliseconds");
 					sleep(timeToProduceAgain);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
