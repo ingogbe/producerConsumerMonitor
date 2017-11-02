@@ -28,14 +28,14 @@ public class Producer extends Thread {
 			synchronized(this.printer) {
 				this.printer.print(
 					"Producer #" + this.number + " put: " + (c.getValue()) + ". " + 
-					"Wait time to put: " + (milisecondsEnd - milisecondsBegin) + ". "
+					"Wait time to put: " + (milisecondsEnd - milisecondsBegin) + " miliseconds. "
 				);
 			}
 			
 			if(waitForNextProduction){
 				try {
 					long timeToProduceAgain = (int)(Math.random() * 100);
-					this.printer.print("INFO> Producer #" + this.number + " produce again in " + timeToProduceAgain + " miliseconds");
+					System.out.println("INFO> Producer #" + this.number + " produce again in " + timeToProduceAgain + " miliseconds");
 					sleep(timeToProduceAgain);
 				} catch (InterruptedException e) {
 					e.printStackTrace();

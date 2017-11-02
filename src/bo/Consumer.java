@@ -29,14 +29,14 @@ public class Consumer extends Thread {
 			synchronized(this.printer) {
 				this.printer.print(
 					"Consumer #" + this.number + " got: " + content.getValue() + " from Producer #" + content.getProducer().getNumber() + ". " + 
-					"Wait time to get: " + (milisecondsEnd - milisecondsBegin)
+					"Wait time to get: " + (milisecondsEnd - milisecondsBegin) + " miliseconds."
 				);
 			}
 			
 			if(waitForNextConsumption){
 				try {
 					long timeToConsumeAgain = (int)(Math.random() * 100);
-					this.printer.print("INFO> Consumer #" + this.number + " consume again in " + timeToConsumeAgain + " miliseconds");
+					System.out.println("INFO> Consumer #" + this.number + " consume again in " + timeToConsumeAgain + " miliseconds");
 					sleep(timeToConsumeAgain);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
