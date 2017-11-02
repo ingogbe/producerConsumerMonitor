@@ -1,4 +1,6 @@
-package view;
+package services;
+
+import bo.Content;
 
 public class Buffer {
 	private Content content;

@@ -1,4 +1,4 @@
-package view;
+package bo;
 
 public class Content {
 	private int value;

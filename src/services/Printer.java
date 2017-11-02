@@ -1,4 +1,4 @@
-package view;
+package services;
 
 public class Printer {
 	public void print(String s){

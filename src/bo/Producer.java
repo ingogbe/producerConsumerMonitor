@@ -1,4 +1,7 @@
-package view;
+package bo;
+
+import services.Buffer;
+import services.Printer;
 
 public class Producer extends Thread {
 	private Buffer buffer;
