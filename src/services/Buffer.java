@@ -22,6 +22,7 @@ public class Buffer {
 		
 		available = false;
 		notifyAll();
+		
 		return this.content;
 	}
 	

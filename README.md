@@ -33,8 +33,8 @@ Producer p1 = new Producer(p, b, 1, 8, true);
 /*
 * Parâmetros do construtor do Consumer:
 * (printer, buffer, numero_identificador, numero_de_consumos, possui_tempo_de_espera_para_consumir)
-Consumer c1 = new Consumer(p, b, 1, 20, false);
 */
+Consumer c1 = new Consumer(p, b, 1, 20, false);
 ```
 
 > O `possui_tempo_de_espera_para_consumir` é um boolean que diz se você quer que um `Producer` espere um tempo randômico para então tentar colocar outra produção no `buffer`.
